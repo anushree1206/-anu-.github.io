@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+section{
+  padding: 2rem 9%;
+}
+.packages .containerbox{
+    display:flex;
+    flex-wrap: wrap;
+    gap:2rem;
+  }
+  
+  .packages .containerbox .box{
+    flex: 1 1 30rem;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+  }
+  
+  .packages .containerbox .box img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .packages .containerbox .box img .content
+  {
+    padding:2rem;
+  }
+  .packages .containerbox .box img .content h3{
+    font-size: 20px;
+    color: #333;
+    }
+  
+  .packages p {
+    font-size: 15px;
+    color: #666;
+}
+
+.packages button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.packages button:hover {
+    background-color: #0069d9;
+  }
+  .containerbox .stars{
+    font-size: 2rem;
+    color: #f3e81a;
+  }
+
+  .packages .stars{
+      display: flex;
+    }
+    .packages .star {
+      font-size: 2rem;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    
+    .packages .star.active,
+    .packages .star:hover,
+    .packages .star:hover ~ .star {
+      color: gold;
+    }
+    
+.packages h3 i{
+    color:var(--orange);
+    color:#f3e81a;
+}

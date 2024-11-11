@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: url(P4.Jpg);
+    background-size: cover;
+    width: 100%;
+  }
+  .login img{
+    width: 100%;
+  }
+  .container {
+    padding: 6em;
+    margin-left: 30%;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .container h1 {
+    color: #3a6351;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  .tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+  .tab-buttons button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .tab-buttons button.active {
+    background-color: #3a6351;
+    color: #fff;
+  }
+  .form-group {
+    margin-bottom: 1.5em;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333;
+    font-weight: bold;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .btn-submit {
+    background-color: #3a6351;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-submit:hover {
+    background-color: #2b4a3f;
+  }
+  .error-message {
+    color: red;
+    font-size: 0.9em;
+  }
+  .hidden {
+    display: none;
+  }
+   footer {
+    padding: 20px;
+    background: #2d3e50;
+    color: #fff;
+    text-align: center;
+  }
+  footer .social-links a {
+    color: #d43f3f;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  footer .social-links a:hover {
+    color: #fff;
+  }
+  .home .video-container video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .home .controls{
+    padding: 1rem;
+    border-radius: 5rem;
+    position: relative;
+    top:10rem;
+  }
+  .home .controls .vidbtn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 .5rem;
+  }
+  .home .controls .vidbtn.active{
+    background: var(--orange);
+  }
+

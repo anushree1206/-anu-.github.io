@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Vietnam | Tourism Website</title>
+  <link rel="stylesheet" href="web.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Discover<span>Vietnam</span></h1>
+    </div>
+    <nav>
+      <div class ="navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="pack.html">Destinations</a></li>
+        <li><a href="book.html">Booking</a></li>
+        <li><a href="login.html">log in</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul> 
+    </div> 
+    </nav>
+  </header>
+  <section class="home" id="home">
+    <div class="content">
+    <h2>Unveil the Beauty of Vietnam</h2>
+    <p>discover new places with us!!</p><br>
+    <a href="pack.html" class="btn">Discover more</a>
+    </div>
+    <div class="controls">
+      <span class="vidbtn active" data-src="vid1.mp4"></span>
+      <span class="vidbtn" data-src="vid2.mp4"></span>
+      <span class="vidbtn" data-src="vid3.mp4"></span>
+      <span class="vidbtn" data-src="vid4.mp4"></span>
+    </div>
+    <div class="video-container">
+      <video src="vid1.mp4" id="video-slider" autoplay muted></video>
+    </div>
+  </section>
+  <script src="web.js"></script>
+</body>
+</html>

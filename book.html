@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h1 style="color: aliceblue;">Contact Us</h1>
+        <p style="color: aliceblue;">Have questions or need help planning your trip? Fill out the form below!</p>
+        <form id="contactForm">
+            <label for="name" style="color: aliceblue;">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email" style="color: aliceblue;">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone" style="color: aliceblue;">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+
+            <label for="message" style="color: aliceblue;">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" style="color: aliceblue;">Send Message</button>
+            <p id="formMessage"></p>
+        </form>
+    </div>
+    <script src="book.js"></script>
+</body>
+</html>

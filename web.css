@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+:root{
+  --orange:#ffa500;
+}
+*::selection{
+  background: var(--orange);
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #2d3e50;
+  color: #fff;
+}
+
+
+header .logo h1 {
+  font-size: 24px;
+}
+
+header .logo span {
+  color: #d43f3f;
+}
+
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header nav ul li a:hover {
+  color: #d43f3f;
+}
+
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  position: relative;
+  flex-flow: column;
+  z-index: 0;
+}
+
+.home .content{
+ text-align: center;
+}
+
+.home .content h2{
+  font-size: 4.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 .3rem .5rem rgba(0, 0,0,.1);
+}
+.home .content h2{
+  font-size: 2.5rem;
+  color: #fff;
+  padding: .5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: var(--orange);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #b82f2f;
+  color: var(--orange);
+}
+
+section{
+  padding: 2rem 9%;
+}
+ 
+
+
+
+
+
+footer {
+  padding: 20px;
+  background: #2d3e50;
+  color: #fff;
+  text-align: center;
+}
+
+footer .social-links a {
+  color: #d43f3f;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .social-links a:hover {
+  color: #fff;
+}
+.home .video-container video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+}
+.home .controls{
+  padding: 1rem;
+  border-radius: 5rem;
+  position: relative;
+  top:10rem;
+}
+.home .controls .vidbtn{
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  margin: 0 .5rem;
+}
+.home .controls .vidbtn.active{
+  background: var(--orange);
+}

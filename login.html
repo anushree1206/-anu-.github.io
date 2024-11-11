@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+     <!--login-->
+ <section class="login" id="login">
+    <div class="container">
+<h1 style="font-size: 45px;">Vietnam Tourism</h1>
+<div class="tab-buttons">
+  <button id="signInTab" class="active" onclick="showForm('signIn')">Sign In</button>
+  <button id="registerTab" onclick="showForm('register')">Register</button>
+</div>
+<!-- Sign In Form -->
+<form id="signInForm">
+    <div class="form-group">
+      <label for="signInUsername" style="color: aliceblue;">Username</label>
+      <input type="text" id="signInUsername" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="signInPassword" style="color: aliceblue;">Password</label>
+      <input type="password" id="signInPassword" name="password" required>
+    </div>
+    <button type="button" class="btn-submit" onclick="validateSignIn()">Login</button>
+    <p id="signInError" class="error-message"></p>
+  </form>
+  <!-- Register Form -->
+  <form id="registerForm" class="hidden">
+    <div class="form-group">
+      <label for="registerUsername"  style="color: aliceblue;">Username</label>
+      <input type="text" id="registerUsername" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="registerEmail"  style="color: aliceblue;">Email</label>
+      <input type="email" id="registerEmail" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="registerPassword"  style="color: aliceblue;">Password</label>
+      <input type="password" id="registerPassword" name="password" required>
+    </div>
+    <button type="button" class="btn-submit" onclick="validateRegister()">Register</button>
+    <p id="registerError" class="error-message"></p>
+  </form>
+    </div>
+</section>
+</body>
+<script src="login.js"></script>
+</html>
